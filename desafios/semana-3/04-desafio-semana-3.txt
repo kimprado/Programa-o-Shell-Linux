@@ -1,0 +1,8 @@
+# Conte-me o que houve que "sed 'ss\ssusg' <<< sussurar" comando deu esta saída: uuuuurar
+
+Em resumo caratere 's' foi definido como delimitador na sintax do comando de substituição 's'.
+
+Traduzindo , sed aplique o comando de substituição 's' usando delimitador 's'.
+Substitua os 's's e para isso use o '\' na regex para escapar e não dar conflito com delimitador então ficamos
+com a regex '\s'. Mais um delimitador 's' e temos o novo valor 'u' que será usado no lugar do 's'.
+Por fim separado mais 1 's', temos a flag 'g' que vai fazer a substituição global.
